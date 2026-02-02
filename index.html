@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calendario de cumpleaños</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="hero">
+        <p class="tag">Cuenta atrás especial</p>
+        <h1>Calendario de cumpleaños</h1>
+        <p class="subtitle">
+          Abre un día a la vez y celebra los pequeños momentos que te acercan a tu
+          gran día.
+        </p>
+      </header>
+
+      <section class="controls">
+        <div class="color-swatch">
+          <span class="swatch swatch-blue" aria-hidden="true"></span>
+          <span class="swatch swatch-lilac" aria-hidden="true"></span>
+          <span class="swatch swatch-peach" aria-hidden="true"></span>
+        </div>
+        <div class="legend">
+          <span class="legend-item"><span class="dot dot-opened"></span> Abierto</span>
+          <span class="legend-item"><span class="dot dot-closed"></span> Cerrado</span>
+        </div>
+      </section>
+
+      <main>
+        <div class="calendar" id="calendar" aria-live="polite">
+          <button class="day" type="button" data-day="1">
+            <span class="day-number">1</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="2">
+            <span class="day-number">2</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="3">
+            <span class="day-number">3</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="4">
+            <span class="day-number">4</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="5">
+            <span class="day-number">5</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="6">
+            <span class="day-number">6</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="7">
+            <span class="day-number">7</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="8">
+            <span class="day-number">8</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="9">
+            <span class="day-number">9</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="10">
+            <span class="day-number">10</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="11">
+            <span class="day-number">11</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="12">
+            <span class="day-number">12</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="13">
+            <span class="day-number">13</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="14">
+            <span class="day-number">14</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="15">
+            <span class="day-number">15</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="16">
+            <span class="day-number">16</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="17">
+            <span class="day-number">17</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="18">
+            <span class="day-number">18</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="19">
+            <span class="day-number">19</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="20">
+            <span class="day-number">20</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="21">
+            <span class="day-number">21</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="22">
+            <span class="day-number">22</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="23">
+            <span class="day-number">23</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+          <button class="day" type="button" data-day="24">
+            <span class="day-number">24</span>
+            <span class="day-label">Sorpresa</span>
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="card">
+        <button class="close" id="close" aria-label="Cerrar">×</button>
+        <p class="card-day" id="cardDay">Día</p>
+        <h2 class="card-title" id="cardTitle">Sorpresa</h2>
+        <p class="card-message" id="cardMessage"></p>
+        <button class="primary" id="markOpened">Guardar como abierto</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
