@@ -1,15 +1,15 @@
 :root {
   color-scheme: light;
-  --bg: #f6f3ff;
+  --bg: #ecf6fb;
   --card: #ffffff;
-  --lavender: #d9d1ff;
+  --lavender: #cfeaf5;
   --peach: #ffd6c9;
   --mint: #d7f5e9;
   --rose: #f9c7d9;
-  --text: #3c3a5a;
-  --muted: #6a6884;
-  --accent: #7b6cf6;
-  --shadow: 0 12px 30px rgba(116, 98, 227, 0.15);
+  --text: #1f4f63;
+  --muted: #4d7a8f;
+  --accent: #2596be;
+  --shadow: 0 12px 30px rgba(37, 150, 190, 0.18);
 }
 
 * {
@@ -20,7 +20,7 @@
 
 body {
   font-family: "Nunito", system-ui, -apple-system, sans-serif;
-  background: linear-gradient(160deg, #f6f3ff 0%, #fff6f2 50%, #f2fbf8 100%);
+  background: linear-gradient(160deg, #ecf6fb 0%, #f4fbff 50%, #eaf7fb 100%);
   color: var(--text);
   min-height: 100vh;
   display: flex;
@@ -184,20 +184,20 @@ body {
 }
 
 .day-card {
-  background: linear-gradient(135deg, #ffffff 0%, #fdf7ff 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f1f9fd 100%);
   border-radius: 20px;
   padding: 16px;
   min-height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid rgba(123, 108, 246, 0.1);
+  border: 1px solid rgba(37, 150, 190, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .day-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 20px rgba(123, 108, 246, 0.15);
+  box-shadow: 0 12px 20px rgba(37, 150, 190, 0.2);
 }
 
 .day-card__top {
@@ -238,12 +238,12 @@ body {
 }
 
 .day-card--special {
-  background: linear-gradient(135deg, #fff1f6 0%, #f6f0ff 100%);
-  border: 2px solid rgba(249, 199, 217, 0.8);
+  background: linear-gradient(135deg, #eef8fd 0%, #f7fbff 100%);
+  border: 2px solid rgba(37, 150, 190, 0.2);
 }
 
 .day-card--special .day-number {
-  color: #e85d9c;
+  color: #1f7ca0;
 }
 
 .day-card--special .day-card__pill {
@@ -265,7 +265,7 @@ body {
 }
 
 .notes__card--highlight {
-  background: linear-gradient(135deg, #f2f0ff 0%, #fff0f5 100%);
+  background: linear-gradient(135deg, #eef8fd 0%, #f6fbff 100%);
 }
 
 .notes__card h3 {
