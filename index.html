@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calendario de Cumpleaños de Paula</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">1–11 de marzo</p>
+        <h1>Calendario de cumpleaños</h1>
+        <p class="hero__subtitle">
+          Un detalle diario para celebrar a Paula. Cada día desbloquea una pequeña sorpresa.
+        </p>
+        <div class="hero__badge">✨ 11 de marzo · Día especial</div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <div class="balloon balloon--peach"></div>
+        <div class="balloon balloon--mint"></div>
+        <div class="balloon balloon--lilac"></div>
+        <div class="gift">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="calendar">
+      <div class="calendar__header">
+        <h2>Cuenta regresiva de cumpleaños</h2>
+        <p>Selecciona un día para añadir el regalo correspondiente cuando esté listo.</p>
+      </div>
+      <div class="calendar__grid" id="calendarGrid"></div>
+    </section>
+
+    <section class="notes">
+      <div class="notes__card">
+        <h3>Inspiración</h3>
+        <p>
+          Colores pastel, ilustraciones minimalistas y mucho cariño. Aquí iremos agregando los detalles
+          de cada regalo día por día.
+        </p>
+      </div>
+      <div class="notes__card notes__card--highlight">
+        <h3>11 de marzo</h3>
+        <p>Un momento especial para Paula: el día más brillante del calendario.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
