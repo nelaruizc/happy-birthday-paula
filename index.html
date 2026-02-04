@@ -7,16 +7,11 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <main class="app">
     <header class="hero">
-      <div class="hero__doodles" aria-hidden="true">
-        <span class="doodle doodle--star"></span>
-        <span class="doodle doodle--sparkle"></span>
-        <span class="doodle doodle--swirl"></span>
-      </div>
       <div class="hero__content">
         <p class="hero__eyebrow">Marzo es un mes muy especial</p>
         <h1>Birthday Advient Calendar</h1>
@@ -27,9 +22,14 @@
         <div class="hero__badge">✨ 11 de marzo · Día especial</div>
       </div>
       <div class="hero__art" aria-hidden="true">
-        <div class="sketch sketch--slice"></div>
-        <div class="sketch sketch--cup"></div>
-        <div class="sketch sketch--slice sketch--slice-right"></div>
+        <div class="balloon balloon--peach"></div>
+        <div class="balloon balloon--mint"></div>
+        <div class="balloon balloon--lilac"></div>
+        <div class="gift">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
 
@@ -37,10 +37,6 @@
       <div class="calendar__header">
         <h2>Cuenta regresiva de cumpleaños</h2>
         <p>Selecciona un día para añadir el regalo correspondiente cuando esté listo.</p>
-      </div>
-      <div class="calendar__doodles" aria-hidden="true">
-        <span class="doodle doodle--star"></span>
-        <span class="doodle doodle--swirl"></span>
       </div>
       <div class="calendar__grid" id="calendarGrid"></div>
     </section>
@@ -56,10 +52,6 @@
       <div class="notes__card notes__card--highlight">
         <h3>11 de marzo</h3>
         <p>Un momento especial para Paula: el día más brillante del calendario.</p>
-      </div>
-      <div class="notes__doodles" aria-hidden="true">
-        <span class="doodle doodle--sparkle"></span>
-        <span class="doodle doodle--star"></span>
       </div>
     </section>
   </main>
